@@ -1,6 +1,7 @@
 # Severino
-Severino is a very simple away to play with events
-"Cara, crachá. Cara, crachá." by Severino.
+Severino is a very simple away to play with events.
+
+*"Cara, crachá. Cara, crachá."* by Severino.
 
 ## Assign Event
 emitter.on(event, callback, once);
@@ -11,7 +12,7 @@ emitter.on(event, callback, once);
     # do something
   });
   
-  emitter.on("App.init", funciton() {
+  emitter.on("App.init", function() {
     # do something only once
   }
   , true);
@@ -19,7 +20,7 @@ emitter.on(event, callback, once);
 
 emitter.once(event, callback);
 ```sh
-  emitter.once("App.init", funciton() {
+  emitter.once("App.init", function() {
     # do something only once
   })
 ```
