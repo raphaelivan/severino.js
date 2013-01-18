@@ -3,6 +3,9 @@ Severino is a very simple away to play with events.
 
 *"Cara, crachá. Cara, crachá."* by Severino.
 
+# Brower
+** Doesn't need a browser it runs on any environment.**
+
 ## Assign Event
 emitter.on(event, callback, once);
 ```sh
