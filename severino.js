@@ -23,7 +23,9 @@
 			if (!_events[event]) {
 				_events[event] = null;
 			};
+
 			_events[event] = bind(this, event, callback, once);
+			return this;
 		}
 		
 		Severino.prototype.off = function(event) {
