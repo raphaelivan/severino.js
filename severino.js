@@ -10,7 +10,7 @@
 				emitter.off(event);
 			}
 
-			return callback.apply(undefined, arguments);			
+			return callback.apply(undefined, arguments);
 		})
 	}
 	
@@ -36,10 +36,9 @@
 			var args = [].slice.call(arguments, 0)
 				,	event = args.shift()
 			;
-
-			while(_events[event]) {
-				return _events[event].apply(undefined, args);
-			}
+			
+			_events[event].apply(undefined, args);
+			return this;
 		}
 		
 		Severino.prototype.once = function(event, callback) {

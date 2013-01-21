@@ -55,8 +55,15 @@ emitter.emit(event, parameters);
       , age: 33
     }
   );  
-  or 
+  or
   severino.emit("Post.create");
+```
+The method emit return the object emitter.So we can chain methods.
+```sh
+  severino
+    .emit("Post.delete")
+    .emit("PostController.list")
+  ;
 ```
 
 ## License
