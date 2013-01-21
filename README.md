@@ -58,13 +58,6 @@ emitter.emit(event, parameters);
   or
   severino.emit("Post.create");
 ```
-The method emit return the object emitter.So we can chain methods.
-```sh
-  severino
-    .emit("Post.delete")
-    .emit("PostController.list")
-  ;
-```
 
 ## License
 Severino is available under the MIT license.

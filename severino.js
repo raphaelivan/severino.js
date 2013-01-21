@@ -1,6 +1,8 @@
-/* 
- 	A very simple event emitter
-*/
+//
+// A very simple way to handler events.
+// source https://github.com/raphaelivan/severino.js
+// 
+
 ;(function(severino) {
 	"use strict";
 	
@@ -37,8 +39,7 @@
 				,	event = args.shift()
 			;
 			
-			_events[event].apply(undefined, args);
-			return this;
+			return _events[event].apply(undefined, args);
 		}
 		
 		Severino.prototype.once = function(event, callback) {
