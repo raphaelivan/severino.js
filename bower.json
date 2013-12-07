@@ -1,0 +1,23 @@
+{
+  "name": "severino.js",
+  "main": "severino.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/raphaelivan/severino.js",
+  "description": "Severino is a JavaScript library to manipulate events.",
+  "keywords": [
+    "events",
+    "severino",
+    "pub/sub"
+  ],
+  "authors": [
+    "Raphael Ivan <contato@raphaelivan.com.br>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
