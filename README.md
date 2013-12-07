@@ -3,7 +3,7 @@ Severino is a very simple away to play with events.
 
 *"Cara, crachá. Cara, crachá."* by Severino.
 
-# Brower
+# Browser
 ** Doesn't need a browser it runs on any environment.**
 
 ## Assign Event
@@ -14,7 +14,7 @@ emitter.on(event, callback, once);
   emitter.on("Post.create", function() {
     # do something
   });
-  
+
   emitter.on("App.init", function() {
     # do something only once
   }
@@ -34,29 +34,34 @@ emitter.off(event, callback);
   emitter.off("App.init", function() {
     # do something
   });
-  or 
-  emitter.off("App.init"); 
+  or
+  emitter.off("App.init");
 ```
 
 ## List Events
 emitter.events(<event>);
 ```sh
   severino.events("Post.create") # => return the function
-  or 
+  or
   severino.events() # => return the events list
 ```
 
 ## Emit Event
 emitter.emit(event, parameters);
 ```sh
-  severino.emit("Post.create", 
+  severino.emit("Post.create",
     {
         name: "Jhon Doe"
       , age: 33
     }
-  );  
+  );
   or
   severino.emit("Post.create");
+```
+
+## Installation
+```sh
+  bower install severino.js
 ```
 
 ## License
